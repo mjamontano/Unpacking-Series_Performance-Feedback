@@ -1,0 +1,101 @@
+/* 7th Sprint Update: 06/26/2024 (Deadline: 07/07/2024) 
+    Changed color scheme from #0000cc to rgba(26, 46, 70, 1) & rgba(194, 0, 0 , 0.80)
+    Added classes .background, .center-container, .home-button, .home-button:hover */
+
+<style>
+    body {
+        background-color: #ffffff; /* Set your desired background color */
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%
+    }
+        
+    table1, table2, table3, table4, table5, table6, table7, th, td {
+        border: inset rgba(38, 38, 96, 1);
+    }
+
+    th, td, h1, h2, h3 {
+        text-align: center;
+        padding: 5px;
+        width: 500px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #ecf4f7;
+        opacity: 90%;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #ecf4f7;
+    }
+
+    .accreditor {
+        height: auto; /* Maintain the aspect ratio */
+        width: 300px; /* Set the desired width */
+    }
+
+    .background {
+        background-image: url('Watermark 2.png');
+        background-position: center; /* Centers the background image within the container */
+        background-size: cover; /* Adjusts the size of the background image to cover the entire container */
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: -1; /* Ensure the background is behind other content */
+        opacity:0.4;
+    }
+
+    .badge {
+        width: 150px; /* Set the desired width */
+        weight: auto; /* Maintain the aspect ratio */
+    }
+
+    .center-container {
+        text-align: right;
+    }
+
+    /* Style for the home button */
+    .home-button {
+        display: inline-block;
+        background-color: rgba(38, 38, 96, 1);
+        color: rgba(236, 244, 247, 1);
+        text-decoration: none;
+        padding: 5px 20px;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        border: solid;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border: inset rgba(236, 244, 247, 1);
+    }
+    
+    .home-button:hover {
+        background-color: rgba(236, 244, 247, 1); /* Darker shade of the primary color on hover */
+        color: rgba(38, 38, 96, 1);
+        border: inset rgba(38, 38, 96, 1);
+    }
+
+    /* Logo styling */
+    .logo {
+        background-color: #ecf4f7; /* Background color of the logo */
+        border: inset rgba(38, 38, 96, 1); /* Border color */
+        border-radius: 5px; /* Rounded corners */
+        color: black; /* Change the color as needed */
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 20px;
+        padding: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        word-spacing: 15px;
+    }
+
+    .underline {
+        text-decoration: underline;
+    }
+</style>
